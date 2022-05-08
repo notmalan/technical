@@ -67,16 +67,16 @@ Once you've cloned this repo, you'll need to:
 
     
  ## Task list in Māori language
-<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/tasks_mi.png" width="750" height="500">
+<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/tasks_mi.png">
 
 ## Task list in English language
-<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/tasks_en.png" width="750" height="500">
+<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/tasks_en.png">
 
 ## Task Dashboard (Backend)
-<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/tasks.png" width="750" height="500">
+<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/tasks.png" >
 
 ## Task Edit Form
-<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/edit_task.png" width="750" height="500">
+<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/edit_task.png" >
 
 
 ## Resources used:
