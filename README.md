@@ -57,6 +57,13 @@ Once you've cloned this repo, you'll need to:
     php artisan twill:superadmin
     ```
     
+For your convenience, here are the task names used in the example:
+- Sweeping and mopping the floor    |    Te horoi me te horoi i te papa
+- Washing dishes and kitchenware    |    Te horoi rīhi me ngā taputapu kīhini
+- Doing laundry washing    |    Te horoi horoi
+
+
+    
  ## Task list in Māori language
 <img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/tasks_mi.png" width="750" height="500">
 
