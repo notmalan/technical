@@ -1,7 +1,7 @@
 
 ## What I've completed:
 
-(Scroll down to the very bottom of this README to see some screen captures of what I've made)
+(Scroll down to the very bottom of this README to see some screen captures of the end-product)
 
 **Requirements:**
 - [x] Must be completed using Twill.io 
@@ -14,9 +14,9 @@
 
 ## Progress on incomplete item(s):
 
-1. I've tried using livewire on a separate repo to create a searchbar (should have created another branch here...). I can get the searchbar to work but it's somewhat buggy, that is, it messes up when switching between localizations (EN | MI)
+1. I have tried using livewire on a separate repo to create a searchbar (should have created another branch here...). I can get the searchbar to work but it's somewhat buggy, that is, it messes up when switching between localizations (EN | MI)
 
-2. Having an issue with uploading files greater than 1MB. Don't know if this is an issue with twill configs or Homestead (nginx|apache configs)? 
+2. I am having an issue with uploading files greater than 1MB. I don't know if this is an issue with twill configs or Homestead (nginx|apache configs)? 
 
 ## Instructions
 
@@ -34,12 +34,12 @@ Once you've cloned this repo, you'll need to:
    composer install
    ```
 
-3. create a homestead config. file 
+3. create a homestead config. file using
    ```
    php vendor/bin/homestead make
    ```
 
-4. edit the `.env` file to configure the APP_URL(s) if you're planning on using some other hostname besides 'homestead.test'
+4. edit the `.env` file to configure the APP_URL(s) if you're planning on using some other hostname besides 'homestead.test' .
    If you're not sure on what to do for this step then see: https://laravel.com/docs/9.x/homestead#hostname-resolution 
 
 5. start the virtual machine using 
@@ -47,7 +47,7 @@ Once you've cloned this repo, you'll need to:
    vagrant up
    ```
 
-6. run migrations using (this will create our tables)
+6. run migrations using
     ```
     php artisan migrate
     ```
@@ -57,7 +57,7 @@ Once you've cloned this repo, you'll need to:
     php artisan twill:superadmin
     ```
     
-For your convenience, here are the task names used in the example:
+**For your convenience, here are the task names used in the example:**
 - Sweeping and mopping the floor    |    Te horoi me te horoi i te papa
 - Washing dishes and kitchenware    |    Te horoi rīhi me ngā taputapu kīhini
 - Doing laundry washing    |    Te horoi horoi
