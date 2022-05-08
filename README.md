@@ -31,7 +31,7 @@ Once you've cloned this repo, you'll need to:
 
 1. `cd` into the cloned repo.
 
-2. install composer using
+2. install packages using
    ```
    composer install
    ```
