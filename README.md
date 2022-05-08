@@ -18,6 +18,8 @@
 
 2. I am having an issue with uploading files greater than 1MB. I don't know if this is an issue with twill configs or Homestead (nginx|apache configs)? 
 
+3. The Settings module in the backend Dashboard doesn't do anything (there is no module for it).
+
 ## Instructions
 
 I've used Homestead to develop this application, so you'll need to run the app locally using Homestead (vagrant).
