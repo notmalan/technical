@@ -1,65 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## What I've completed:
 
-## About Laravel
+(Scroll down to the very bottom of this README to see some screen captures of what I made)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Requirements:
+- [x] Must be completed using Twill.io 
+- [x] Clients can create, update, and delete new tasks on the backend.
+- [x] A task consists of a title and an image.
+- [x] Task's title is translatable using English & Māori languages.
+- [ ] Visitors can search the task's title on the website (respective to their chosen language). 
+- [x] Include Readme. Use any packages
+- [x] Push to git & share repo link
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Progress on incomplete item(s):
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. I've tried using livewire on a separate repo to create a searchbar (should have created another branch here...). I can get the searchbar to work but it's somewhat buggy, that is, it messes up when switching between localizations (EN | MI)
 
-## Learning Laravel
+2. Having an issue with uploading files greater than 1MB. Don't know if this is an issue with twill configs or Homestead (nginx|apache configs)? 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Instructions
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+I've used Homestead to develop this application, so you'll need to run the app locally using Homestead (vagrant).
 
-## Laravel Sponsors
+If you don't have homestead set up, you'll need to refer to the docs: https://laravel.com/docs/9.x/homestead#installation-and-setup .    
+Setup is fairly simple, and should only take a couple of minutes.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Once you've cloned this repo, you'll need to:
 
-### Premium Partners
+1. `cd` into the cloned repo.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+2. install composer using
+   ```
+   composer install
+   ```
 
-## Contributing
+3. create a homestead config. file 
+   ```
+   php vendor/bin/homestead make
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+4. edit the `.env` file to configure the APP_URL(s) if you're planning on using some other hostname besides 'homestead.test'
+   If you're not sure on what to do for this step then see: https://laravel.com/docs/9.x/homestead#hostname-resolution 
 
-## Code of Conduct
+5. start the virtual machine using 
+   ```
+   vagrant up
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+6. run migrations using (this will create our tables)
+    ```
+    php artisan migrate
+    ```
 
-## Security Vulnerabilities
+7. create an admin user account to login to the back end
+    ```
+    php artisan twill:superadmin
+    ```
+    
+ ## Task list in Māori language
+<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/tasks_mi.png" width="750" height="500">
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Task list in English language
+<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/tasks_en.png" width="750" height="500">
 
-## License
+## Task Dashboard (Backend)
+<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/tasks.png" width="750" height="500">
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# technical
+## Task Edit Form
+<img src="https://github.com/notmalan/technical/blob/main/public/assets/screen_captures/edit_task.png" width="750" height="500">
+
+
+## Resources used:
+
+- 7 Minute CMS by Twill.io https://www.youtube.com/watch?v=qNGAf9VA_TY&t=144s
+- Twill Command Line Tutorial https://www.youtube.com/watch?v=W4ECg9ojLmQ
+- LaravelLocalization docs:  https://github.com/mcamara/laravel-localization/blob/master/README.md
+- Building a multilingual site with Twill and Laravel Localization: https://twill.io/docs/guides/building_a_multilingual_site_with_twill_and_laravel_localization.html#where-to-go-from-here
+- & a lot of StackOverflow 
+
+
+
+
+
