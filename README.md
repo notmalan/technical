@@ -1,7 +1,7 @@
 
 ## What I've completed:
 
-(Scroll down to the very bottom of this README to see some screen captures of what I made)
+(Scroll down to the very bottom of this README to see some screen captures of what I've made)
 
 Requirements:
 - [x] Must be completed using Twill.io 
