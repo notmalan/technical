@@ -3,7 +3,7 @@
 
 (Scroll down to the very bottom of this README to see some screen captures of what I've made)
 
-Requirements:
+**Requirements:**
 - [x] Must be completed using Twill.io 
 - [x] Clients can create, update, and delete new tasks on the backend.
 - [x] A task consists of a title and an image.
